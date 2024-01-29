@@ -79,8 +79,8 @@ metadata:
   namespace: kube-system
 roleRef:
   apiGroup: rbac.authorization.k8s.io
-  kind: Role
-  name: kubernetes-dashboard-minimal
+  kind: ClusterRole
+  name: kubernetes-dashboard-cluster-admin
 subjects:
 - kind: ServiceAccount
   name: kubernetes-dashboard
